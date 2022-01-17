@@ -1,0 +1,24 @@
+.Navbar-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-item-text {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item-text:hover {
+    color: #5d5296;
+    font-weight: bold;
+}
+
+.navbar-collapse .btn-outline-success {
+    color: black;
+}
+
+.navbar-collapse .btn-outline-success:hover {
+    background-color: #9E8AFD;
+}
