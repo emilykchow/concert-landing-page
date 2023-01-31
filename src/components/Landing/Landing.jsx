@@ -32,7 +32,7 @@ function Landing() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://i.ibb.co/MnGjT6K/Image-1.png"
+              src="https://destination-ontario-prod.s3.ca-central-1.amazonaws.com/files/s3fs-public/2021-10/great-outdoo-venues-live-music-lovers.jpg?VersionId=p7D59VP49xcld3mv_TGw_9vDet9fqD3o"
               alt="First slide"
             />
             <Carousel.Caption></Carousel.Caption>
@@ -41,7 +41,7 @@ function Landing() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://i.ibb.co/S66xWrf/Image-2.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Classical_spectacular10.jpg"
               alt="Second slide"
             />
 
@@ -50,7 +50,7 @@ function Landing() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://i.ibb.co/gVwS2B9/Image-3.png"
+              src="https://media4.s-nbcnews.com/i/newscms/2021_31/3496464/210804-live-music-comeback-mb-1314_7fceb566941001f336d12735ffbfb5d2.jpg"
               alt="Third slide"
             />
 
@@ -60,7 +60,7 @@ function Landing() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://i.ibb.co/Yhn00Tz/Image-4.png"
+              src="https://cdn.britannica.com/58/155258-050-2F8189A9/Symphony-concert-Svetlanov-Hall-Moscow-International-House.jpg"
               alt="First slide"
             />
             <Carousel.Caption>
