@@ -1,100 +1,133 @@
 .Pricing-wrapper {
-    height: 80vh;
-    background-color: #9E8AFD;
-    margin: auto;
-}
-
-.card:hover {
-    transform: scale(1.2);
-    z-index: 1;
-    border: 1px solid #9E8AFD;
-}
-
-.card {
-    height: 100%;
-    border-radius: 1.25rem !important;
-    background-color: #F6F5FD;
-    position: absolute;
-}
-
-.card .btn-primary {
-    background-color: #9E8AFD;
-    border-color: #8577ce;
-    color: white;
-    margin-top: 10px;
-    position: absolute;
-    bottom: 10px;
-}
-    
-.pricing-btn-container{
-    display: flex;
-    justify-content: center;
-    height: 20%;
-
-}
-
-.cards-container {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    width: 80%;
-    text-align: center;
-    margin: auto;
-    height: 75%;
-    padding: 5%;
-    border-radius: 1.25rem;
-    position: relative;
+  padding: 4rem 1.5rem 6rem;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(138, 113, 244, 0.28),
+      transparent 60%
+    ),
+    linear-gradient(145deg, #211a3a, #302357);
 }
 
 .pricing-title {
-    display: block;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    color: white;
+  margin: 0 auto;
+  padding: 0 0 2rem;
+  text-align: center;
 }
 
-.card-title.h5{
-    margin: 5%;
+.pricing-title h2 {
+  margin: 0;
+  color: #fff;
 }
 
-p.card-text {
-    margin: 12% 0%;
-    /* float: left; */
+.cards-container {
+  display: flex;
+  width: min(100%, var(--content-width));
+  align-items: stretch;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 0 auto;
 }
 
-.card-text br {
-    height: 10px;
+.cards-container .card {
+  position: relative;
+  width: 18rem !important;
+  min-height: 330px;
+  flex: 1 1 0;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1.15rem !important;
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(9, 6, 28, 0.18);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
+.cards-container .card:hover {
+  z-index: 1;
+  transform: translateY(-6px);
+  border-color: #c9bcff;
+  box-shadow: 0 24px 55px rgba(9, 6, 28, 0.28);
+}
 
-@media screen and (max-width: 600px) {
-   .cards-container {
-       flex-direction: column;
-       height: 90%;
-   }
-   .card {
-       width: 100% !important;
-       height: 50% !important;
-       margin: 3px;
-   }
-   .card-body {
-       width: 100%;
-   }
+.cards-container .card:nth-child(2) {
+  border: 2px solid #a48bff;
+}
 
-   p.card-text{
-       margin: 0;
-   }
+.cards-container .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem;
+}
 
-   .card .btn-primary {
-       margin: 0;
-   }
+.cards-container .card-title.h5 {
+  margin: 0 0 0.6rem;
+  color: var(--color-ink);
+  font-size: 1.2rem;
+  font-weight: 750;
+}
 
-   .card-title.h5 {
-       margin: 0;
-   }
+.cards-container .card-subtitle {
+  margin-bottom: 1.3rem !important;
+  color: var(--color-purple-dark) !important;
+  font-size: 1.35rem;
+  font-weight: 750;
+}
 
-   .Pricing-wrapper {
-       height: 100vh;
-   }
+.cards-container .card-text {
+  margin: 0 0 1.6rem;
+  color: var(--color-muted);
+  font-size: 0.94rem;
+  line-height: 2;
+}
+
+.pricing-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.cards-container .card .btn-primary {
+  position: static;
+  width: 100%;
+  margin: 0;
+  border: 1px solid var(--color-purple);
+  border-radius: 999px;
+  background: var(--color-purple);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.cards-container .card .btn-primary:hover {
+  transform: translateY(-1px);
+  border-color: var(--color-purple-dark);
+  background: var(--color-purple-dark);
+}
+
+@media (max-width: 600px) {
+  .Pricing-wrapper {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .cards-container .card {
+    width: min(100%, 340px) !important;
+    min-height: 310px;
+    flex: 1 1 280px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cards-container .card,
+  .cards-container .card .btn-primary {
+    transition: none;
+  }
 }

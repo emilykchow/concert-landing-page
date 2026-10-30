@@ -1,24 +1,94 @@
 .Navbar-wrapper {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.Navbar-wrapper .navbar.bg-light {
+  min-height: 76px;
+  padding: 0.8rem max(1.25rem, calc((100vw - var(--content-width)) / 2));
+  background: #3b3763 !important;
+  box-shadow: 0 5px 24px rgba(9, 6, 28, 0.16);
+}
+
+.Navbar-wrapper .navbar-brand {
+  color: #fff;
+  font-size: 1.65rem;
+  font-weight: 850;
+  letter-spacing: -0.07em;
+
+  h4 {
+    margin: 0;
+  }
+}
+
+.Navbar-wrapper .navbar-nav .nav-link {
+  padding: 0.5rem 0.8rem;
 }
 
 .nav-item-text {
-    text-decoration: none;
-    color: black;
+  color: #fff;
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease;
 }
 
-.nav-item-text:hover {
-    color: #5d5296;
-    font-weight: bold;
+.Navbar-wrapper .navbar-brand .nav-item-text {
+  color: #fff;
 }
 
-.navbar-collapse .btn-outline-success {
-    color: black;
+.nav-item-text:hover,
+.Navbar-wrapper .navbar-brand .nav-item-text:hover {
+  color: #b7a5ff;
 }
 
-.navbar-collapse .btn-outline-success:hover {
-    background-color: #9E8AFD;
+.Navbar-wrapper .form-control {
+  min-width: 150px;
+  border-color: #e7e4f0;
+  border-radius: 999px;
+  padding-left: 1rem;
+}
+
+.Navbar-wrapper .form-control:focus {
+  border-color: #b6a5ff;
+  box-shadow: 0 0 0 0.2rem rgba(118, 87, 232, 0.12);
+}
+
+.Navbar-wrapper .navbar-collapse .btn-outline-success {
+  border-color: var(--color-purple);
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 650;
+  padding-inline: 1.2rem;
+}
+
+.Navbar-wrapper .navbar-collapse .btn-outline-success:hover {
+  border-color: var(--color-purple);
+  background-color: var(--color-purple);
+  color: #fff;
+}
+
+.Navbar-wrapper .navbar-toggler {
+  border: 0;
+  box-shadow: none;
+}
+
+.Navbar-wrapper .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 991px) {
+  .Navbar-wrapper .navbar-collapse {
+    padding: 0.8rem 0 0.35rem;
+  }
+
+  .Navbar-wrapper .navbar-nav {
+    align-items: flex-start;
+  }
+
+  .Navbar-wrapper .navbar-collapse .form-control {
+    min-width: 0;
+  }
 }

@@ -1,44 +1,116 @@
-.carousel {
-    width: 80%;
-    left: 10%;
-}
-
-.carousel-container {
-    background-color: #F8F9FA;
+.Landing-wrapper {
+  width: 100%;
+  padding-bottom: 5.5rem;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(196, 181, 253, 0.28), transparent 58%),
+    var(--color-page);
 }
 
 .intro-container {
-    background-color: #F8F9FA;
-    height: 230px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.intro-container p {
-    color: black;
-    margin-top: 55px;
+  display: flex;
+  min-height: 280px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 1.5rem 2.25rem;
+  text-align: center;
 }
 
 .intro-container h2 {
-    color: black;
-    margin-top: 55px;
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2.4rem, 6vw, 4.7rem);
+  line-height: 1.02;
+  letter-spacing: -0.075em;
 }
 
-.link-to-pricing:hover {
-    cursor: pointer; 
-    font-size: 20px;
+.intro-container p {
+  max-width: 610px;
+  margin: 1.25rem 0 0;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.7;
 }
 
-.Landing-wrapper {
-    /* height: 100vh; */
-    width: 100%;
+.link-to-pricing {
+  display: inline-block;
+  margin-left: 0.2rem;
 }
 
-@media screen and (max-width: 600px) {
-    carousel-item img {
-        /* height: 90%; */
-    }
+.link-to-pricing .nav-item-text {
+  color: var(--color-purple-dark);
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: rgba(118, 87, 232, 0.38);
+  text-underline-offset: 4px;
+}
+
+.link-to-pricing .nav-item-text:hover {
+  color: var(--color-purple);
+  cursor: pointer;
+}
+
+.carousel-container {
+  width: min(88%, var(--content-width));
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 1.35rem;
+  background: #211a35;
+  box-shadow: 0 24px 60px rgba(33, 24, 70, 0.2);
+}
+
+.carousel-container .carousel,
+.carousel-container .carousel-inner,
+.carousel-container .carousel-item {
+  width: 100%;
+}
+
+.carousel-container .carousel-item img {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 48vw, 560px);
+  object-fit: cover;
+  opacity: 0.88;
+}
+
+.carousel-container .carousel-indicators {
+  margin-bottom: 1.1rem;
+}
+
+.carousel-container .carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 50%;
+}
+
+.carousel-container .carousel-control-prev,
+.carousel-container .carousel-control-next {
+  width: 9%;
+}
+
+.carousel-container .carousel-caption {
+  bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .Landing-wrapper {
+    padding-bottom: 3.75rem;
+  }
+
+  .intro-container {
+    min-height: 260px;
+    padding-top: 2.5rem;
+  }
+
+  .carousel-container {
+    width: calc(100% - 2rem);
+    border-radius: 1rem;
+  }
+
+  .carousel-container .carousel-item img {
+    height: 58vw;
+    min-height: 240px;
+  }
 }

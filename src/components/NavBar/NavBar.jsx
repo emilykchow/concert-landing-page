@@ -27,7 +27,7 @@ function NavBar() {
                 duration={500}
                 offset={0}
               >
-                Epicon
+                <h4>Epicon</h4>
               </Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
