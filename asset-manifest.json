@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/concert-landing-page/static/css/main.aa7b7438.css",
-    "main.js": "/concert-landing-page/static/js/main.0fc1dc33.js",
+    "main.css": "/concert-landing-page/static/css/main.66c415cc.css",
+    "main.js": "/concert-landing-page/static/js/main.6ff52acb.js",
     "static/js/787.103c1eb2.chunk.js": "/concert-landing-page/static/js/787.103c1eb2.chunk.js",
     "index.html": "/concert-landing-page/index.html",
-    "main.aa7b7438.css.map": "/concert-landing-page/static/css/main.aa7b7438.css.map",
-    "main.0fc1dc33.js.map": "/concert-landing-page/static/js/main.0fc1dc33.js.map",
+    "main.66c415cc.css.map": "/concert-landing-page/static/css/main.66c415cc.css.map",
+    "main.6ff52acb.js.map": "/concert-landing-page/static/js/main.6ff52acb.js.map",
     "787.103c1eb2.chunk.js.map": "/concert-landing-page/static/js/787.103c1eb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa7b7438.css",
-    "static/js/main.0fc1dc33.js"
+    "static/css/main.66c415cc.css",
+    "static/js/main.6ff52acb.js"
   ]
 }
